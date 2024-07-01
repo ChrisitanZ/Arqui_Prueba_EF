@@ -48,10 +48,10 @@ app.UseSwaggerUI(c =>
     c.RoutePrefix = string.Empty; // Servir Swagger en la raíz del sitio
 });
 
-// Middleware y enrutamiento
-app.UseHttpsRedirection(); // Redireccionamiento HTTPS
-app.UseAuthorization(); // Autorización
 
-app.MapControllers(); // Mapear los controladores
+app.UseHttpsRedirection(); 
+app.UseAuthorization(); 
 
-app.Run(); // Ejecutar la aplicación
+app.MapControllers(); 
+
+app.Run(); 
